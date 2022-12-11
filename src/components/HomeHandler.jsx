@@ -10,7 +10,7 @@ function HomeDisplay() {
             <Link to='/'>Home</Link>
           </li>
           <li>
-            <Link to='/characters'>characters</Link>
+            <Link to='/Product'>Productos</Link>
           </li>
           <li>
             <Link to='/movies'>movies</Link>
