@@ -1,0 +1,171 @@
+.App {
+  text-align: center;
+}
+.Text {
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  border: 2px solid rgb(211, 209, 209);
+  width: 25%;
+  position: relative;
+  margin: auto;
+  color: aliceblue;
+  text-align: center;
+  background-color: #336699;
+}
+table {
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  text-align: right;
+  border-collapse: collapse;
+  background-color: #f2f2f2;
+}
+table td {
+  border: 2px solid rgb(183, 183, 183);
+  padding: 8px;
+}
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+table tr:hover {
+  background-color: rgba(202, 199, 199, 0.674);
+}
+table th {
+  padding: 12px 8px;
+  border: 2px solid rgb(211, 209, 209);
+  text-align: center;
+  background-color: #336699;
+  color: white;
+}
+.TablePage {
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  color: white;
+  border: 2px solid rgb(211, 209, 209);
+  text-align: center;
+  background-color: #336699;
+  width: 360px;
+  height: 25px;
+  padding: 4px;
+  display: flex;
+  position: relative;
+  margin: auto;
+}
+.HeaderMain {
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  text-align: right;
+  width: 360px;
+  height: auto;
+  padding: 4px;
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+
+  width: 100%;
+}
+.TableHeader {
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  color: white;
+  border: 2px solid rgb(211, 209, 209);
+  text-align: center;
+  background-color: #336699;
+  width: 40%;
+  height: 25px;
+  padding-top: 2px;
+  padding-left: 5px;
+}
+
+.List {
+  text-align: center;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.FormSubmit {
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  color: white;
+  border: 2px solid rgb(211, 209, 209);
+  text-align: center;
+  background-color: #336699;
+  width: 18%;
+  height: 25px;
+  padding-top: 2px;
+  padding-left: 5px;
+}
+.FormSubmit2 {
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  color: white;
+  border: 2px solid rgb(211, 209, 209);
+  text-align: center;
+  background-color: #336699;
+  width: 22.7%;
+  height: 25px;
+  padding-top: 2px;
+  padding-left: 5px;
+}
+.FormMovieEdit {
+  place-content: 'titulo de la peliculaeee';
+}
+.formControl {
+  text-align: right;
+  flex-direction: column;
+  display: grid;
+  justify-content: center;
+  width: 300 px;
+  align-items: right;
+}
+.FormVersion1 {
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  color: white;
+  border: 2px solid rgb(211, 209, 209);
+  text-align: center;
+  background-color: #336699;
+  width: 15%;
+  height: 50px;
+  padding-top: 2px;
+  padding-left: 5px;
+  text-align: right;
+  flex-direction: column;
+  display: grid;
+  justify-content: center;
+  width: 300 px;
+  align-items: right;
+}
+
+.ImgMovie {
+  max-height: 100;
+  max-width: 100;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
