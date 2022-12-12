@@ -5,7 +5,7 @@ import axios from 'axios';
 function HomeDisplay() {
   var token = window.localStorage.getItem('token');
   const [names, setName] = useState(['']);
-
+  const [product, setProduct] = useState(['']);
   const authAxios = axios.create({
     withCredentials: true,
     headers: {
@@ -15,6 +15,7 @@ function HomeDisplay() {
   const getProductSearch = async () => {
     const response = await authAxios.get();
     console.log(response.data);
+    setProduct(response.data);
   };
   const register = (e) => {
     e.preventDefault();
