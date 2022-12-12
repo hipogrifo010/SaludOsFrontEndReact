@@ -26,10 +26,25 @@ function LoginPost() {
   };
   return (
     <div>
-      <form className='FormVersion1'>
+      <form
+        className='TablePage'
+        style={{
+          display: 'flex',
+          width: '360px',
+          height: 'auto',
+
+          position: 'relative',
+        }}>
         <label>
           email:
           <input
+            style={{
+              display: 'flex',
+              width: '80%',
+              height: 'auto',
+              margin: 'auto',
+              alignContent: 'start',
+            }}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             type='text'
@@ -39,6 +54,13 @@ function LoginPost() {
         <label>
           password :
           <input
+            style={{
+              display: 'flex',
+              width: '80%',
+              height: 'auto',
+              margin: 'auto',
+              alignContent: 'start',
+            }}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             type='text'
@@ -46,7 +68,7 @@ function LoginPost() {
           />
         </label>
       </form>
-      <p>
+      <p className='Text'>
         Introduce los valores"(puedes agregar uno o mas a la vez , @nova321S)"
       </p>
       <button onClick={insert}>Crear Nuevo!</button>
