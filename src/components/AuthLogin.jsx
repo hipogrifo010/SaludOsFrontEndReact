@@ -6,7 +6,7 @@ function LoginPost() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const insert = async (e) => {
+  const login = async (e) => {
     e.preventDefault();
     try {
       const response = await axios.post(
@@ -71,7 +71,7 @@ function LoginPost() {
       <p className='Text'>
         Introduce los valores"(puedes agregar uno o mas a la vez , @nova321S)"
       </p>
-      <button onClick={insert}>Crear Nuevo!</button>
+      <button onClick={login}>Log In</button>
     </div>
   );
 }

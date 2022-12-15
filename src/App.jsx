@@ -3,7 +3,8 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import ProductList from './components/Products/ProductLists';
-import LoginPost from './components/Auth';
+import LoginPost from './components/AuthLogin';
+import RegisterPost from './components/AuthRegister';
 import HomeDisplay from './components/HomeHandler';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path='/Product' element={<ProductList />} />
         <Route path='/Product:page' element={<ProductList />} />
         <Route path='/auth/login' element={<LoginPost />} />
+        <Route path='/auth/register' element={<RegisterPost />} />
       </Routes>
     </div>
   );

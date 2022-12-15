@@ -48,6 +48,13 @@ function HomeDisplay() {
                 login
               </Link>
             </th>
+            <th>
+              <Link
+                to={`/auth/register`}
+                style={{ color: 'inherit', textDecoration: 'inherit' }}>
+                register
+              </Link>
+            </th>
           </tr>
         </thead>
       </table>
