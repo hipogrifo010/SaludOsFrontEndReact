@@ -10,7 +10,7 @@ Aqui se lista la pagina de acceso a la web con domino en Azure(en construccion).
  Se crea una conexion estable entre la WebApi y Azure Static Web.
 
 ### **Especificaciones tecnicas**
-El apartado Front-End (Web static) se carga automaticamente a AzureDevOps por medio del use de CI/CD
+El apartado Front-End (Web static) se carga automaticamente a AzureDevOps por medio del uso de CI/CD
 
 ### **Seguridad**
 Se utilizan los cookies propios de Azure que permiten evitar el ataque XSS y Ademas se utiliza Bearer Token JWT para evitar los Ataques CSRF.
