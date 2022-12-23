@@ -19,6 +19,9 @@ Se utilizan los cookies propios de Azure que permiten evitar el ataque XSS y Ade
 ### **Back-end Route**
 El Back-end esta controlado por una Api .NETCORE y su aplicacion esta enlazada por medio de endpoints Con Peticiones HTTP.
 
+## **Misc**
+Por razones de practicidad los datos se cargan por medio del Back-end ,utilizando una funcion de carga de archivos excel ,proximamente habilitare su vista en el front-end
+
 
 ## **Especificación de GIT**
 
