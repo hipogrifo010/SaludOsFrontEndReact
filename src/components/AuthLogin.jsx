@@ -1,10 +1,12 @@
 import { React, useState } from 'react';
+import { createSearchParams, useNavigate } from 'react-router-dom';
 import { urlAuth } from './endpoints';
 import axios from 'axios';
 
 function LoginPost() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
   const login = async (e) => {
     e.preventDefault();
@@ -20,7 +22,11 @@ function LoginPost() {
       const token = response.data.token;
       localStorage.setItem('token', token);
       console.log(token);
+      navigate({
+        pathname: '/',
+      });
     } catch (error) {
+      //deberia mandar a pagina con error 404 soft
       console.log(error.data);
     }
   };

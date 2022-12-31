@@ -26,9 +26,13 @@ function ProductList() {
   };
 
   const getProducts = async () => {
-    const response = await authAxios.get(urlProduct + `?page=${pages} `);
-    console.log(response.data);
-    setProduct(response.data);
+    try {
+      const response = await authAxios.get(urlProduct + `?page=${pages} `);
+      setProduct(response.data);
+      console.log(response.data);
+    } catch (error) {
+      console.log(error);
+    }
   };
   return (
     <div>
