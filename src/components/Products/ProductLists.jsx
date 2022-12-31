@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function ProductList() {
   const [product, setProduct] = useState([]);
-  const [pages, setPages] = useState(['']);
+  const [pages, setPages] = useState(['1']);
 
   var token = window.localStorage.getItem('token');
   useEffect(() => {
@@ -26,7 +26,7 @@ function ProductList() {
   };
 
   const getProducts = async () => {
-    const response = await authAxios.get(urlProduct + `?=${pages} `);
+    const response = await authAxios.get(urlProduct + `?page=${pages} `);
     console.log(response.data);
     setProduct(response.data);
   };
