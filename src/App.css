@@ -1,78 +1,122 @@
 .App {
   text-align: center;
+  background-color: #eaeaf3;
 }
-.Text {
-  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
-  border: 2px solid rgb(211, 209, 209);
-  width: 25%;
-  position: relative;
-  margin: auto;
-  color: aliceblue;
-  text-align: center;
-  background-color: #336699;
-}
-table {
-  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+
+.TableHD {
+  background-color: #eaeaf3;
   margin: 0 auto;
-  text-align: right;
+  width: 60%;
+  min-width: 60%;
+  height: 500px;
+  contain-intrinsic-size: 50%;
+  box-shadow: 0px 0px 5px #888;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: -100px;
   border-collapse: collapse;
-  
+  overflow: hidden;
+  position: sticky;
 }
 table td {
-  border: 2px solid rgb(183, 183, 183);
+  font-family: 'Calibri', sans-serif;
   padding: 8px;
 }
 table tr:nth-child(even) {
   background-color: #f2f2f2;
+  border-collapse: collapse;
 }
 table tr:hover {
   background-color: rgba(202, 199, 199, 0.674);
 }
 table th {
+  font-family: 'Calibri', sans-serif;
+  color: #3469fd;
   padding: 12px 8px;
-  border: 2px solid rgb(211, 209, 209);
+  cursor: pointer;
+  background-color: #f2f2f2;
   text-align: center;
-  background-color: #336699;
-  color: white;
+}
+table th:hover {
+  border-radius: 5px;
+  background-color: rgba(202, 199, 199, 0.674);
+}
+.button {
+  display: 'flex';
+  width: '110px';
+  margin: 'auto';
+}
+.TableTop {
+  font-family: 'Calibri', sans-serif;
+  color: #3469fd;
+  background-color: #f2f2f2;
+  padding: 4px;
+  padding-inline-start: 8px;
+  padding-inline-end: 7px;
+  top: 5px;
+  right: 10px;
+  position: relative;
+  box-shadow: 0px 0px 5px #888;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  align-items: center;
+  display: 'flex';
+  height: '100%';
+  align-content: 'center';
+  text-justify: 'center';
+  margin: '0 auto';
+  height: 22px;
+  border-radius: 10px;
 }
 .TablePage {
-  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
-  margin: 0 auto;
-  color: white;
-  border: 2px solid rgb(211, 209, 209);
-  text-align: center;
-  background-color: #336699;
-  width: 360px;
+  font-family: 'Calibri', sans-serif;
+  color: #3469fd;
+  background-color: #f2f2f2;
+  width: fit-content;
   height: 25px;
   padding: 4px;
+  top: 5px;
   display: flex;
   position: relative;
+  box-shadow: 0px 0px 5px #888;
+  text-align: center;
+  border-radius: 10px;
+  border-collapse: collapse;
+  overflow: hidden;
   margin: auto;
+  display: 'flex';
+  padding-inline-start: 8px;
+  padding-inline-end: 7px;
 }
+
 .HeaderMain {
-  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
-  margin: 0 auto;
+  font-family: 'Didot', Arial, Helvetica, sans-serif;
   text-align: right;
   width: 360px;
   height: auto;
+  background-color: rgb(27, 105, 165);
+  position: relative;
   padding: 4px;
+  padding-top: 10px;
   display: flex;
   position: relative;
   margin: 0 auto;
-
   width: 100%;
 }
+.HeaderMain img {
+  width: 200px;
+  padding-left: 50px;
+}
 .TableHeader {
-  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  font-family: 'Didot Extrabold', Arial, Helvetica, sans-serif;
   margin: 0 auto;
-  color: white;
-  border: 2px solid rgb(211, 209, 209);
   text-align: center;
-  background-color: #336699;
   width: 40%;
   height: 25px;
-  padding-top: 2px;
-  padding-left: 5px;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .List {
@@ -106,9 +150,7 @@ table th {
   padding-top: 2px;
   padding-left: 5px;
 }
-.FormMovieEdit {
-  place-content: 'titulo de la peliculaeee';
-}
+
 .formControl {
   text-align: right;
   flex-direction: column;
@@ -136,10 +178,6 @@ table th {
   align-items: right;
 }
 
-.ImgMovie {
-  max-height: 100;
-  max-width: 100;
-}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
