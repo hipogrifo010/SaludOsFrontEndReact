@@ -37,13 +37,13 @@ function ProductList() {
   return (
     <div>
       <div>
-        <table className='table'>
+        <table className='TableHD'>
           <thead>
             <tr>
-              <th>Nombre de producto</th>
-              <th>Nombre de la Compañia</th>
-              <th>Nombre de la Droga</th>
-              <th>Formato de Medicamento</th>
+              <th>Producto</th>
+              <th>Compañia</th>
+              <th>Droga</th>
+              <th>Formato</th>
               <th>Precio</th>
             </tr>
           </thead>
@@ -59,18 +59,9 @@ function ProductList() {
             ))}
           </tbody>
         </table>
-        <form className='TablePage' onSubmit={register}>
-          Pagina:
-          <input
-            style={{
-              display: 'flex',
-              width: '50%',
-              margin: 'auto',
-              alignContent: 'center',
-            }}
-            value={pages}
-            onChange={(e) => setPages(e.target.value)}
-          />
+        <form className='TablePage' onSubmit={register}  >
+        Pagina:
+          <input value={pages} onChange={(e) => setPages(e.target.value)} />
           <button
             style={{
               display: 'flex',

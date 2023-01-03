@@ -23,7 +23,7 @@ function HomeDisplay() {
   };
   return (
     <header className='HeaderMain'>
-      <h1>Aqui Va una Imagen</h1>
+      <img src={require('../assets/Imgs/LogoSaludos.png')} alt='Logo' />
       <table className='TableHeader'>
         <thead>
           <tr>
@@ -58,40 +58,11 @@ function HomeDisplay() {
           </tr>
         </thead>
       </table>
-      <form
-        style={{
-          display: 'flex',
-          width: '400px',
-          textAlign: 'center',
-          height: '100%',
-          alignContent: 'center',
-          textJustify: 'center',
-          margin: '0 auto',
-        }}
-        className='TablePage'
-        onSubmit={register}>
-        Busqueda de Producto:
-        <input
-          style={{
-            display: 'flex',
-            width: '100px',
-            height: '15px',
-            margin: '4px',
-            alignContent: 'center',
-          }}
-          value={names}
-          onChange={(e) => setName(e.target.value)}
-        />
+      <form className='TableTop' onSubmit={register}>
+        Producto:
+        <input value={names} onChange={(e) => setName(e.target.value)} />
         <Link to={`/search/product`}>
-          <button
-            style={{
-              display: 'flex',
-              width: '110px',
-              margin: '4px',
-              alignContent: 'center',
-            }}>
-            Busqueda
-          </button>
+          <button className='button'>Busqueda</button>
         </Link>
       </form>
     </header>
