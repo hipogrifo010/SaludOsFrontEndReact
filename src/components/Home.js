@@ -7,6 +7,7 @@ const Home = () => (
     medicamentos ! "(esta página está en construcción, por ende, se debe
     considerar que existen faltas de comprobación de código)"
   </h1>
+  
 );
 
 export default Home;

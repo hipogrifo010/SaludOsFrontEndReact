@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   background-color: #eaeaf3;
+  height: 98.15vh;
 }
 
 .TableHD {
@@ -17,6 +18,9 @@
   border-collapse: collapse;
   overflow: hidden;
   position: sticky;
+}
+.foot {
+  background-color: #282c34;
 }
 table td {
   font-family: 'Calibri', sans-serif;
@@ -38,7 +42,6 @@ table th {
   text-align: center;
 }
 table th:hover {
-  border-radius: 5px;
   background-color: rgba(202, 199, 199, 0.674);
 }
 .button {
