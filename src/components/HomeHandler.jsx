@@ -28,30 +28,22 @@ function HomeDisplay() {
         <thead>
           <tr>
             <th>
-              <Link
-                to={`/`}
-                style={{ color: 'inherit', textDecoration: 'inherit' }}>
+              <Link className='link-styles' to={`/`}>
                 Home
               </Link>
             </th>
             <th>
-              <Link
-                to={`/Product`}
-                style={{ color: 'inherit', textDecoration: 'inherit' }}>
+              <Link className='link-styles' to={`/Product`}>
                 Productos
               </Link>
             </th>
             <th>
-              <Link
-                to={`/auth/login`}
-                style={{ color: 'inherit', textDecoration: 'inherit' }}>
+              <Link className='link-styles' to={`/auth/login`}>
                 login
               </Link>
             </th>
             <th>
-              <Link
-                to={`/auth/register`}
-                style={{ color: 'inherit', textDecoration: 'inherit' }}>
+              <Link className='link-styles' to={`/auth/register`}>
                 register
               </Link>
             </th>

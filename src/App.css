@@ -44,6 +44,11 @@ table th {
 table th:hover {
   background-color: rgba(202, 199, 199, 0.674);
 }
+.link-styles {
+  display: block;
+  color: inherit;
+  text-decoration: inherit;
+}
 .button {
   display: 'flex';
   width: '110px';
