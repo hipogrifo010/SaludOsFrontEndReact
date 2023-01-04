@@ -72,11 +72,8 @@ function RegisterPost() {
           />
         </label>
       </form>
-      <p className='Text'>
-        Introduce los valores"(puedes agregar uno o mas a la vez , @nova321S)"
-      </p>
-      <button onClick={register}>
-        {' '}
+      <p className='Text'>ingrese los valores</p>
+      <button onClick={register} className='button'>
         {loading ? (
           <Watch
             height='80'
