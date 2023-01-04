@@ -3,8 +3,22 @@
   background-color: #eaeaf3;
   height: 98.15vh;
 }
-
-.TableHD {
+.Text {
+  color: #3469fd;
+  font-family: 'Calibri', sans-serif;
+  font-size: 20px;
+}
+.TableLow {
+  background-color: #eaeaf3;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  min-width: 60%;
+  border-collapse: collapse;
+  overflow: hidden;
+  position: sticky;
+}
+.TableHigh {
   background-color: #eaeaf3;
   margin: 0 auto;
   width: 60%;
@@ -44,12 +58,16 @@ table th {
 table th:hover {
   background-color: rgba(202, 199, 199, 0.674);
 }
+
 .link-styles {
   display: block;
   color: inherit;
   text-decoration: inherit;
 }
+
 .button {
+  font-family: monospace;
+  color: #3469fd;
   display: 'flex';
   width: '110px';
   margin: 'auto';
@@ -77,7 +95,8 @@ table th:hover {
   height: 22px;
   border-radius: 10px;
 }
-.TablePage {
+
+.Forms {
   font-family: 'Calibri', sans-serif;
   color: #3469fd;
   background-color: #f2f2f2;
